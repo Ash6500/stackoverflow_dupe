@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Home, Globe, Users, Briefcase, Building } from "lucide-react";
 
-const Sidebar = () => {
+const LeftSidebar = () => {
   const [activeSection, setActiveSection] = useState("home");
 
   const handleSectionClick = (section) => {
@@ -9,7 +9,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="w-60 h-screen bg-white shadow-md">
+    <div className="w-60 h-screen bg-white">
 
       {/* Sidebar Container */}
       <div className="flex flex-col space-y-4 py-6 px-4">
@@ -108,4 +108,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default LeftSidebar;

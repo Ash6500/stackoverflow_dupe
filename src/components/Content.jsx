@@ -45,7 +45,7 @@ const Content = () => {
 
 
   return (   
-    <div className="max-w-3xl mx-auto bg-white shadow rounded-lg">
+    <div className="max-w-3xl mx-auto bg-white">
     {/* Header */}
     <div className="p-4 border-b flex items-center">
       <h2 className="text-lg font-bold text-gray-500">Top Question</h2>
@@ -58,7 +58,7 @@ const Content = () => {
               activeCategory === category.label
                 ? "bg-orange-500 text-white px-4 py-3 rounded-full "
                 : "text-gray-500"
-            }`}
+            } m-2`}
           >
             {category.label.charAt(0).toUpperCase() +
               category.label.slice(1)}

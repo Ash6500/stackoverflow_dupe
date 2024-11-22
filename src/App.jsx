@@ -1,17 +1,14 @@
 import './App.css'
-
 import Navbar from './components/Layout/Navbar'
 import Footer from './components/Layout/Footer'
-// import Content from './components/Content'
-import LeftSidebar from './components/LeftSidebar'
+import Home from './pages/Home'
 
 function App() {
 
   return (
     <>
       <Navbar/>
-      {/* <Content/> */}
-      <LeftSidebar/>
+      <Home/>
       <Footer/>
     </>
   )
