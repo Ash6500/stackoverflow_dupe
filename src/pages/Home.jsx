@@ -1,10 +1,16 @@
-// import LeftSidebar from '../components/LeftSidebar';
-// import Content from '../components/Content';
-// import RightSidebar from '../components/RightSidebar';
+import LeftSidebar from '../components/LeftSidebar';
+import Content from '../components/Content';
+import RightSidebar from '../components/RightSidebar';
 
-const Home = () => {
+const Home = ({ searchQuery }) => {
   return (
-    <div>Home</div>
+    <div className='grid grid-cols-[15rem_3fr_20rem]'>
+      <LeftSidebar />
+      <Content searchQuery={searchQuery} />
+      <div className=''>
+        <RightSidebar />
+      </div>
+    </div>
   );
 };
 
